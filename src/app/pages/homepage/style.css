@@ -1,0 +1,33 @@
+.homepage {
+    background-image: url("../../assets/bg.png"); /* Ensure this path is correct */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Remove background image on smaller screens */
+@media (max-width: 1024px) {  /* Tablets */
+    .homepage {
+        background-size: contain; /* Adjust image scaling */
+        background-position: top center;
+    }
+}
+
+@media (max-width: 900px) {  /* Small laptops */
+    .homepage {
+        background-size: auto;
+        background-position: center;
+    }
+}
+
+@media (max-width: 768px) {  /* Mobile screens */
+    .homepage {
+        background-image: none !important; 
+        background-color: #ffffff; /* Add a fallback background color */
+    }
+}
+
+@media (max-width: 480px) {  /* Small mobile screens */
+    .homepage {
+        padding: 20px; /* Adjust padding for better spacing */
+    }
+}

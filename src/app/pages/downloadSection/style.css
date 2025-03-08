@@ -1,0 +1,40 @@
+.download {
+    background-image: url("../../assets/download/bg.png"); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #153a62; /* Fallback background color */
+}
+
+/* Adjust background for tablets */
+@media (max-width: 1024px) {
+    .download {
+        background-size: contain; /* Adjust scaling */
+        background-position: top center;
+    }
+}
+
+/* Further adjustments for small laptops */
+@media (max-width: 900px) {
+    .download {
+        background-size: auto;
+        background-position: center;
+        background-color: #1C4670;
+    }
+}
+
+/* Remove background image for mobile screens */
+@media (max-width: 768px) {
+    .download {
+        background-image: none !important; 
+        background-color: #1C4670; /* Ensure fallback color remains */
+    }
+}
+
+/* Optimize layout for smaller mobile screens */
+@media (max-width: 480px) {
+    .download {
+        padding: 20px;
+        background-color: #1C4670; /* Adjust padding for better spacing */
+    }
+}
